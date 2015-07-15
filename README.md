@@ -35,7 +35,7 @@ npm run init
 npm start
 ````
 
-### To build out the binary
+### To build out the binaries
 
 ````shell
 npm run build
