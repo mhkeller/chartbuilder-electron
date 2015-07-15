@@ -21,6 +21,25 @@ See the [issue tracker](https://github.com/mhkeller/chartbuilder-electron/issues
 * Figure out a way to inject the necessary menu JavaScript into the Chartbuilder JS environment per [docs](https://github.com/atom/electron/blob/master/docs/api/menu.md) without altering that repo.
 * Set default download location to something other than `~/Library/Application Support/Chartbuilder/Downloads/`.
 
+## Using your customized Chartbuilder build
+
+If your build is on GitHub and the install and build processes haven't deviated from Chartbuilder 2.0, then replace the dependency information in `package.json` [near line 31](package.json#L31) with your own. 
+
+For example, if my fork of Chartbuilder lives at `http://github.com/mhkeller/Chartbuilder`, the `package.json` line would look like:
+
+````json
+  "dependencies": {
+    "chartbuilder": "mhkeller/Chartbuilder",
+    "electron-debug": "^0.1.1"
+  },
+````
+
+Then, following the **Developing** instructions below to create your build.
+
+For the `chartbuilder-electron` repo, we've added [a commit sha preceeded](package.json#L31) by a `#` to better keep track of which version of that repository we are pulling, but that is optional. Without a specific commit or branch name, it will pull the latest at the time of building. 
+
+For more information on npm dependencies as Git Urls, [check out the npm docs](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies).
+
 ## Developing
 
 ### To install everything
