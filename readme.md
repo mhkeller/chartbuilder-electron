@@ -3,7 +3,7 @@ Chartbuilder Electron
 
 > A desktop version of Quartz's [Chartbuilder app](https://github.com/quartz/chartbuilder).
 
-## Releases
+## Download
 
 Download the latest on the [Releases](https://github.com/Quartz/Chartbuilder) page. If you're on OS X, select the `Darwin` release. Because Chartbuilder isn't on npm, it's currently pegged to the [latest commit](package.json#L31) so we can keep track of what version this was built with.
 
