@@ -28,7 +28,7 @@
     "electron-app"
   ],
   "dependencies": {
-    "chartbuilder": "quartz/Chartbuilder#fba88d844efdda703f57547d7c97d9bf22d36283",
+    "chartbuilder": "^2.0.0",
     "electron-debug": "^0.1.1"
   },
   "devDependencies": {
