@@ -23,7 +23,7 @@ See the [issue tracker](https://github.com/mhkeller/chartbuilder-electron/issues
 
 ## Using your customized Chartbuilder build
 
-If your build is on GitHub and the install and build processes haven't deviated from Chartbuilder 2.0, then replace the dependency information in `package.json` [near line 31](package.json#L31) with your own. 
+If your build is on GitHub and the install and build processes haven't deviated from Chartbuilder 2.0, then fork this repository and replace the dependency information in `package.json` [near line 31](package.json#L31) with your own info. 
 
 For example, if my fork of Chartbuilder lives at `http://github.com/mhkeller/Chartbuilder`, the `package.json` line would look like:
 
@@ -34,9 +34,9 @@ For example, if my fork of Chartbuilder lives at `http://github.com/mhkeller/Cha
   },
 ````
 
-Then, following the **Developing** instructions below to create your build.
+Then, follow the **Developing** instructions below to create your build.
 
-For the `chartbuilder-electron` repo, we've added [a commit sha preceeded](package.json#L31) by a `#` to better keep track of which version of that repository we are pulling, but that is optional. Without a specific commit or branch name, it will pull the latest at the time of building. 
+*Note on versioning:* For the `chartbuilder-electron` repo, there's added [a commit sha preceeded](package.json#L31) by a `#` to better keep track of which version of that repository we are pulling, but that is optional. Without a specific commit or branch name, it will pull the latest at the time of building. 
 
 For more information on npm dependencies as Git Urls, [check out the npm docs](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies).
 
