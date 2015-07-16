@@ -36,7 +36,7 @@ For example, if my fork of Chartbuilder lives at `http://github.com/mhkeller/Cha
 
 Then, follow the **Developing** instructions below to create your build.
 
-*Note on versioning:* For the `chartbuilder-electron` repo, there's added [a commit sha preceeded](package.json#L31) by a `#` to better keep track of which version of that repository we are pulling, but that is optional. Without a specific commit or branch name, it will pull the latest at the time of building. 
+**Note on versioning:** You can also add [a commit sha preceeded](https://github.com/mhkeller/chartbuilder-electron/blob/79d653323ce60698fb1b8b61b485a1f1e685f97f/package.json#L31) by a `#` to better keep track of which version of that repository we are pulling, but that is optional. Without a specific commit or branch name, it will pull the latest at the time of building. You can also publish your whitelabelled Chartbuilder to npm and call it with a version number, but that isn't usually desirable since your white-labelled version isn't meant for public distribution.
 
 For more information on npm dependencies as Git Urls, [check out the npm docs](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies).
 
