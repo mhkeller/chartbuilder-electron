@@ -8,6 +8,8 @@ require('crash-reporter').start();
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
 
+app.setDataPath(app.getHomeDir())
+
 function createMainWindow () {
 	const win = new BrowserWindow({
 		width: 1350,
